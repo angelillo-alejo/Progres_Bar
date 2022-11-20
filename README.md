@@ -1,4 +1,4 @@
-# Progres_Bar
+# Progress_Bar
 Progress Bars with HTML5 and CSS
 Exercise carried out in the Upgrade-Hub Bootcamp. 
 This exercise consists of a progress bar, made with HTML5 and CSS.
