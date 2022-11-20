@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    background: #63bcf6;
+    height: 100%;
+}
+
+.fondo{
+    height: 50px;
+    width: 45%;
+    background: white;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+}
+
+.progress {
+    height: 30px;
+    width: 40%;
+    border: 1px solid #428bca;
+    background-color: #e6f3fa;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    margin: 10px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #39f03987;
+    display: flex;
+    align-items: center;
+    transition: width 0..25s;
+    border-radius: 5px;
+    justify-content: center;
+}
+ 
+.progress-bar__text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #03a4f500;
+}
+
+
+i{
+    position: relative;
+    margin: 0;
+    float: right;
+    display: flex;
+    padding: 20px;
+    color: gray;
+    animation: procentajeCheck 5s infinite;
+}
+
+
+@keyframes progreso {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes porcentaje {
+    0% {
+        content: '0%';
+    }
+    25% {
+        content: '25%';
+    }
+    50% {
+        content: '50%';
+    }
+    75% {
+        content: '75%';
+    }
+    100% {
+        content: '100%';
+    }
+}
+
+@keyframes procentajeCheck{
+    0%{
+        color:gray;
+    }
+    5%{
+        color:gray;
+    }
+    10%{
+        color:gray;
+    }
+    20%{
+        color:gray;
+    }
+    30%{
+        color:gray;
+    }
+    40%{
+        color: gray;
+    }
+    50%{
+        color:gray;
+    }
+    60%{
+        color: gray;
+    }
+    70%{
+        color:gray;
+    }
+    80%{
+        color:gray;
+    }
+    90%{
+        color:gray;
+    }
+    100%{
+        color: green;
+    }
+    
+}
+
+@keyframes color {
+    from {color: gray;}
+    to {color: green;}
+  }
+
+.progress-bar {
+    animation: progreso 5s linear infinite;
+}
+
+@media screen and (min-width: 480px) {
+    /* Código CSS que solo aplica a pantallas con ancho > 480 */
+    p {
+        font-size: 25px;
+    }
+ }
+
+ @media all and (min-width: 800px) and (max-width: 1024px) {
+    .columna {
+        width: 33%;
+    }
+}
+
